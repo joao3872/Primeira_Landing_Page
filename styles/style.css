@@ -1,0 +1,322 @@
+header .btn_login, .btn_mais {
+    background: var(--transparent);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 2px 8px;
+    border: 2px solid var(--orange);
+    font-weight: bold;
+}
+
+header .btn_login:hover {
+    border-color: var(--orange-red);
+    color: var(--orange);
+}
+
+header .btn_login, .btn_cadastro {
+    cursor: default;
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main .container_conteudo, .container_informacoes, .mostrar, .container_video, .mais_informacoes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 30px;
+}
+
+main .container_conteudo .conteudo_texto, .texto {
+    text-align: center;
+    line-height: 1.6;
+}
+
+main .container_conteudo .conteudo_texto .titulo {
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main .container_conteudo .conteudo_texto .subtitulo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main .container_conteudo .conteudo_texto .cadastro {
+    justify-content: center;
+}
+
+main .container_conteudo .conteudo_texto .cadastro .btn_cadastro {
+    background: var(--transparent);
+    border: 2px solid var(--aqua);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    color: var(--aqua);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main .container_conteudo .conteudo_texto .cadastro .btn_cadastro:hover {
+    box-shadow: 0 .5em .5em -.4em var(--aqua);
+    transform: translateY(-.25em);
+    color: var(--white);
+}
+
+
+main .container_conteudo img {
+    height: 280px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+main .container_informacoes {
+    padding: 0 20px;
+}
+
+main .container_informacoes h1, .titulo_video {
+    border-top: 2px dashed var(--white);
+    padding-top: 12px;
+    text-align: center;
+}
+
+main .container_informacoes .mostrar, .mais_informacoes {
+    display: none;
+}
+
+main .container_informacoes .mostrar, .texto {
+    font-size: 16px;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+main .container_informacoes .btn_mais {
+    padding: 6px 10px;
+    border-color: var(--black);
+    font-size: 15px;
+}
+
+main .container_informacoes .btn_mais:hover {
+    background: var(--orange);
+}
+
+main .container_video {
+    margin-bottom: 35px;
+}
+
+main .container_video .video {
+    display: none;
+}
+
+main .container_video .video2 {
+    width: 80%;
+    height: 500px;
+}
+
+main .conteudo_secundario .container_video .mais_informacoes {
+    padding: 0 30px;
+}
+
+
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    header .btn_login {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+
+    main {
+        padding: 30px 0;
+    }
+
+    main .container_conteudo {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 15px;
+    }
+
+    main .container_conteudo .conteudo_texto {
+        line-height: 1.6;
+        padding: 0 12px;
+    }
+
+    main .container_conteudo .conteudo_texto .titulo {
+        font-size: 60px;
+    }
+
+    main .container_conteudo .conteudo_texto .subtitulo {
+        font-size: 22px;
+    }
+
+    main .container_conteudo .conteudo_texto .cadastro .btn_cadastro {
+        padding: 13px;
+        font-size: 19px;
+    }
+
+    main .container_conteudo img {
+        height: 280px;
+    }
+
+    main .conteudo_secundario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 55px;
+    }
+
+    main .conteudo_secundario .container_informacoes {
+        width: 70%;
+    }
+
+    main .conteudo_secundario .container_informacoes h1, .titulo_video {
+        padding-top: 20px;
+        font-size: 19px;
+    }
+
+    main .conteudo_secundario .container_informacoes .btn_mais, .btn_cadastro {
+        cursor: pointer;
+    }
+
+    main .conteudo_secundario .container_informacoes .mostrar, .texto, .mais_informacoes {
+        font-size: 17px;
+    }
+
+    main .conteudo_secundario .container_video {
+        padding-top: 0;
+        width: 70%;
+        margin-bottom: 0;
+    }
+
+    main .conteudo_secundario .container_video .video {
+        display: block;
+        width: 85%;
+    }
+
+    main .conteudo_secundario .container_video .video2 {
+        display: none;
+    }
+
+    main .conteudo_secundario .container_informacoes .btn_mais {
+        font-size: 16px;
+        padding: 8px 12px;
+        margin-top: 10px;
+    }
+
+    main .conteudo_secundario .container_video .mais_informacoes {
+        padding-top: 0;
+    }
+
+    main .conteudo_secundario .container_video .mais_informacoes h1 {
+        font-size: 21px;
+    }
+}
+
+
+
+@media screen and (min-width: 901px) {
+    header .btn_login {
+        font-size: 17px;
+        padding: 6px 10px;
+        cursor: pointer;
+    }
+
+    main {
+        padding: 60px 0;
+    }
+
+    main .container_conteudo {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    main .container_conteudo .conteudo_texto {
+        line-height: 1.8;
+    }
+
+    main .container_conteudo .conteudo_texto .titulo {
+        font-size: 70px;
+    }
+
+    main .container_conteudo .conteudo_texto .subtitulo {
+        font-size: 24px;
+    }
+
+    main .container_conteudo .conteudo_texto .cadastro .btn_cadastro {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    main .container_conteudo img {
+        height: 300px;
+    }
+
+    main .conteudo_secundario {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 65px;
+    }
+
+    main .conteudo_secundario .container_informacoes {
+        width: 35%;
+    }
+
+    main .conteudo_secundario .container_informacoes h1, .titulo_video {
+        padding-top: 28px;
+        font-size: 22px;
+    }
+
+    main .conteudo_secundario .container_informacoes .btn_mais, .btn_cadastro {
+        cursor: pointer;
+    }
+
+    main .conteudo_secundario .container_informacoes .mostrar, .texto, .mais_informacoes {
+        font-size: 18px;
+    }
+
+    main .conteudo_secundario .container_video {
+        padding-top: 0;
+        width: 35%;
+        margin-bottom: 0;
+    }
+
+    main .conteudo_secundario .container_video .video {
+        display: block;
+        width: 80%;
+    }
+
+    main .conteudo_secundario .container_video .video2 {
+        display: none;
+    }
+
+    main .conteudo_secundario .container_informacoes .btn_mais {
+        font-size: 17px;
+        padding: 10px 14px;
+        margin-top: 20px;
+    }
+
+    main .conteudo_secundario .container_video .mais_informacoes {
+        padding-top: 0;
+    }
+
+    main .conteudo_secundario .container_video .mais_informacoes h1 {
+        font-size: 22px;
+    }
+}

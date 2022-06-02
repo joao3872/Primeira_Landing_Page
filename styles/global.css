@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+}
+
+html {
+    --fundo-cabecalho-rodape: #333;
+    --white: #fff;
+    --black: #000;
+    --red: red;
+    --aqua: aqua;
+    --green: #25D366;
+    
+    --white-transparent: rgba(255, 255, 255, .9);
+    --black-transparent: rgba(0, 0, 0, .4);
+    --orange: orange;
+    --purple: #a626a6;
+    --orange-red: orangered;
+    --transparent: transparent;
+}
+
+body {
+    background: linear-gradient(.9turn, var(--orange-red), var(--orange));
+    background-repeat: no-repeat;
+}
+
+
+header, footer {
+    background: var(--fundo-cabecalho-rodape);
+    padding: 10px;
+    justify-content: space-between;
+}
+
+header, div, .conteudo_footer {
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    gap: 20px;
+}
+
+header div .abrir_menu, .fechar_menu {
+    color: var(--white);
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 6px 8px;
+    border: 2px solid var(--white);
+}
+
+header div .fechar_menu {
+    display: none;
+    color: var(--red);
+    border-color: var(--red);
+    padding: 6px 10px;
+}
+
+header div .logo {
+    color: var(--white);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+header div .logo:hover, .logo:focus {
+    box-shadow: 0 .5em .5em -.4em var(--aqua);
+}
+
+header div .logo, .link, .icon1, .icon2, .icon3 {
+    cursor: default;
+}
+
+header .menu {
+    background: var(--white-transparent);
+    display: none;
+    position: absolute;
+    width: 190px;
+    top: 55px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px var(--black-transparent);
+}
+
+header .menu .link {
+    display: block;
+    color: var(--black);
+    line-height: 1.6;    
+    padding-left: 7px;
+    font-weight: bold;
+    transition: .30s;
+}
+
+header .menu .link:hover {
+    background: var(--orange-red);
+    color: var(--white);
+}
+
+
+footer h4 {
+    text-align: center;
+    color: var(--white);
+}
+
+footer .conteudo_footer {
+    justify-content: center;
+    gap: 40px;
+    padding-top: 15px;
+}
+
+footer .conteudo_footer .icon1, .icon2, .icon3 {
+    color: var(--white);
+    font-size: 20px;
+}
+
+footer .conteudo_footer .icon1:hover {
+    color: var(--red);
+}
+
+footer .conteudo_footer .icon2:hover {
+    color: var(--purple);
+}
+
+footer .conteudo_footer .icon3:hover {
+    color: var(--green);
+}
+
+
+
+@media screen and (min-width: 601px) {
+    header, footer {
+        padding: 13px;
+    }
+
+    header div .logo {
+        font-size: 22px;
+    }
+
+    header div .abrir_menu, .fechar_menu {
+        cursor: default;
+        font-size: 24px;
+    }
+
+    header .menu {
+        top: 63px;
+    }
+
+    header div .logo, .link, .icon1, .icon2, .icon3 {
+        cursor: default;
+    }
+
+    footer h4 {
+        font-size: 17px;
+    }
+
+    footer .conteudo_footer {
+        padding-top: 20px;
+        gap: 50px;
+    }
+
+    footer .conteudo_footer .icon1, .icon2, .icon3 {
+        font-size: 22px;
+    }
+}
+
+
+
+@media screen and (min-width: 901px) {
+    header, footer {
+        padding: 15px;
+    }
+
+    header div .logo {
+        font-size: 24px;
+    }
+
+    header div .abrir_menu, .fechar_menu {
+        cursor: pointer;
+        font-size: 26px;
+    }
+
+    header .menu {
+        top: 65px;
+    }
+
+    header div .logo, .link, .icon1, .icon2, .icon3 {
+        cursor: pointer;
+    }
+
+    footer h4 {
+        font-size: 18px;
+    }
+
+    footer .conteudo_footer {
+        padding-top: 20px;
+        gap: 50px;
+    }
+
+    footer .conteudo_footer .icon1, .icon2, .icon3 {
+        font-size: 24px;
+    }
+}
