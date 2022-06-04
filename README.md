@@ -4,6 +4,10 @@
 
 <img src="imagens/modo_mobile.gif" height="500px" width="260px" />
 
+### Tablet :
+
+<img src="imagens/tablet.gif" />
+
 ### Versão Desktop :
 
 <img src="imagens/modo_desktop.gif" />
