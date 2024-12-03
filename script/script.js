@@ -52,7 +52,7 @@ function hoverOn() {
         btn[c].addEventListener('mouseenter', () => {
             if (btn[c] == btn[0]) {
                 icons[0].setAttribute('src', 'imagens/envelope-regular2.svg')
-            } else {
+            } else if (btn[c] == btn[1]) {
                 icons[1].setAttribute('src', 'imagens/discord-brands-solid2.svg')
             } else {
                 icons[2].setAttribute('src', 'imagens/whatsapp-brands-solid2.svg')
