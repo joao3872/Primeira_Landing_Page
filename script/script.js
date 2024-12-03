@@ -1,9 +1,9 @@
 function menu() {
     var menu = document.querySelector('nav.menu')
     
-    var abrir = document.querySelector('span.abrir_menu')
+    var abrir = document.querySelector('img.abrir_menu')
     
-    var fechar = document.querySelector('span.fechar_menu')
+    var fechar = document.querySelector('img.fechar_menu')
     
     
     if (menu.style.display != 'block') {
