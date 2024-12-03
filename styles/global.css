@@ -48,16 +48,14 @@ header div {
 }
 
 header div .abrir_menu, .fechar_menu {
-    color: var(--white);
     border-radius: 12px;
-    font-size: 22px;
+    height: 32px;
     padding: 6px 8px;
     border: 2px solid var(--white);
 }
 
 header div .fechar_menu {
     display: none;
-    color: var(--red);
     border-color: var(--red);
     padding: 6px 10px;
 }
