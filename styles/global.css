@@ -113,20 +113,7 @@ footer .conteudo_footer {
 }
 
 footer .conteudo_footer .icon1, .icon2, .icon3 {
-    color: var(--white);
-    font-size: 20px;
-}
-
-footer .conteudo_footer .icon1:hover {
-    color: var(--red);
-}
-
-footer .conteudo_footer .icon2:hover {
-    color: var(--purple);
-}
-
-footer .conteudo_footer .icon3:hover {
-    color: var(--green);
+    height: 20px;
 }
 
 
@@ -142,7 +129,7 @@ footer .conteudo_footer .icon3:hover {
 
     header div .abrir_menu, .fechar_menu {
         cursor: default;
-        font-size: 24px;
+        height: 34px;
     }
 
     header .menu {
@@ -163,7 +150,7 @@ footer .conteudo_footer .icon3:hover {
     }
 
     footer .conteudo_footer .icon1, .icon2, .icon3 {
-        font-size: 22px;
+        height: 22px;
     }
 }
 
@@ -180,7 +167,7 @@ footer .conteudo_footer .icon3:hover {
 
     header div .abrir_menu, .fechar_menu {
         cursor: pointer;
-        font-size: 26px;
+        height: 36px;
     }
 
     header .menu {
@@ -201,6 +188,6 @@ footer .conteudo_footer .icon3:hover {
     }
 
     footer .conteudo_footer .icon1, .icon2, .icon3 {
-        font-size: 24px;
+        height: 24px;
     }
 }
